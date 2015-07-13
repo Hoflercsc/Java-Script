@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Math 101</title>
+<link rel="stylesheet" type="text/css" href="mathpage1.css">
+
+
+</head>
+<body>
+
+<font face="verdana" color="0066FF" size="6"><b>Math</b></font> &nbsp;
+<font face="verdana" color="FF5700" size="6"><b>101</b></font>
+</br>
+</br>
+<p>Welcome to Math 101 The purpose of this site is to teach kids Math and
+Math concepts. Also included are Adidition, Subtraction, Multiplication
+Division calculators. </p>
+</br>
+</br>
+
+ <P id="introduction"> <font face="verdana" color="orange" size="3pt"><b>
+Addition Calculator</b></p></font>
+
+<input id="value1" type="text" />
+<span> + </span>
+<input id="value2" type="text" />
+<input type="submit" onclick="output();">
+<p id="result"> </p>
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+var value1 = document.getElementById('value1').value;
+var value2 = document.getElementById('value2').value;
+
+function output(){
+    var value1 = document.getElementById('value1').value;
+    var value2 = document.getElementById('value2').value;
+
+    document.getElementById('result').innerHTML = parseInt(value1) + parseInt(value2);
+}
+</script>
+
+<P id="introduction"> <font face="verdana" color="FF1F1F" size="3pt"><b>
+Subtraction Calculator</b></p></font>
+
+<input id="value3" type="text" />
+<span> - </span>
+<input id="value4" type="text" />
+<input type="submit" onclick="output2();">
+<p id="result2"> </p>
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+var value3 = document.getElementById('value3').value;
+var value4 = document.getElementById('value4').value;
+
+function output2(){
+    var value3 = document.getElementById('value3').value;
+    var value4 = document.getElementById('value4').value;
+
+    document.getElementById('result2').innerHTML = parseInt(value3) - parseInt(value4);
+}
+</script>
+
+</script>
+
+<P id="introduction"> <font face="verdana" color="blue" size="3pt"><b>
+Multiplication Calculator</b></p></font>
+
+<input id="value5" type="text" />
+<span> x </span>
+<input id="value6" type="text" />
+<input type="submit" onclick="output3();">
+<p id="result3"> </p>
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+var value5 = document.getElementById('value5').value;
+var value6 = document.getElementById('value6').value;
+
+function output3(){
+    var value5 = document.getElementById('value5').value;
+    var value6 = document.getElementById('value6').value;
+
+    document.getElementById('result3').innerHTML = parseInt(value5) * parseInt(value6);
+}
+</script>
+
+</script>
+
+<P id="introduction"> <font face="verdana" color="yellow" size="3pt"><b>
+Division Calculator</b></p></font>
+
+<input id="value7" type="text" />
+<span> <b>/</b> </span>
+<input id="value8" type="text" />
+<input type="submit" onclick="output4();">
+<p id="result4"> </p>
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+var value7 = document.getElementById('value7').value;
+var value8 = document.getElementById('value8').value;
+
+function output4(){
+    var value7 = document.getElementById('value7').value;
+    var value8 = document.getElementById('value8').value;
+
+    document.getElementById('result4').innerHTML = parseInt(value7) / parseInt(value8);
+}
+</script>
+
+<h1> Order of Operations</h1>
+<p> Order of operations are rules that say which calculation comes first in an expression.</p>
+<p> A = addition, S = Subtraction, D = Division, E = Exponent, M = Multiplication, P = parentheses</p>
+<p> Click on each button to test yourself. </p>
+
+<button onclick="oo1()">1st order</button> <button onclick="oo2()">2nd order</button>
+<button onclick="oo3()">3rd order</button> <button onclick="oo4()">4th order</button>
+<button onclick="oo5()">5th order</button> <button onclick="oo6()">6th order</button>
+<script>
+function oo1(){
+    var name = prompt('What is the first order of operation?');
+    if (name == 'p')
+    {
+        alert('parentheses is correct!');
+    }
+    else if (name =='P')
+	{
+		alert('parentheses is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+<script>
+function oo2(){
+    var name = prompt('What is the 2nd order of operation?');
+    if (name == 'e')
+    {
+        alert('exponents is correct!');
+    }
+    else if (name =='E')
+	{
+		alert('exponents is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+<script>
+function oo3(){
+    var name = prompt('What is the 3rd order of operation?');
+    if (name == 'm')
+    {
+        alert('exponents is correct!');
+    }
+    else if (name =='M')
+	{
+		alert('Multiplication is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+<script>
+function oo4(){
+    var name = prompt('What is the 4th order of operation?');
+    if (name == 'd')
+    {
+        alert('Division is correct!');
+    }
+    else if (name =='D')
+	{
+		alert('Division is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+<script>
+function oo5(){
+    var name = prompt('What is the 5th order of operation?');
+    if (name == 'a')
+    {
+        alert('Addition is correct!');
+    }
+    else if (name =='A')
+	{
+		alert('Addition is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+<script>
+function oo6(){
+    var name = prompt('Lastly the 6th order of operation?');
+    if (name == 's')
+    {
+        alert('Subtraction is correct!');
+    }
+    else if (name =='S')
+	{
+		alert('Subtraction is correct!');
+    }
+    else
+    {
+        alert('wrong answer!');
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    background-color: #8F007A;
+}
+H1 {
+   font-family: 'verdana';
+   font-size: 20pt;
+   background: #8F007A;
+   color: green;
+}
+
+P {
+   font-family: verdana;
+   font-size: 12pt;
+   color: white;
+}
