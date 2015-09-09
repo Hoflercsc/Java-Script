@@ -8,7 +8,7 @@
 
 </head>
 <body>
-
+//-----------------------Introduction --------------------
 <font face="verdana" color="0066FF" size="6"><b>Math</b></font> &nbsp;
 <font face="verdana" color="FF5700" size="6"><b>101</b></font>
 </br>
@@ -18,7 +18,9 @@ Math concepts. Also included are Adidition, Subtraction, Multiplication
 Division calculators. </p>
 </br>
 </br>
+//----------------------- Introduction End ------------------
 
+//-----------------------Addition Calulator and code --------------------
  <P id="introduction"> <font face="verdana" color="orange" size="3pt"><b>
 Addition Calculator</b></p></font>
 
@@ -39,7 +41,7 @@ function output(){
     document.getElementById('result').innerHTML = parseInt(value1) + parseInt(value2);
 }
 </script>
-
+//----------------------------subtraction calculator and code ------------
 <P id="introduction"> <font face="verdana" color="FF1F1F" size="3pt"><b>
 Subtraction Calculator</b></p></font>
 
@@ -60,7 +62,7 @@ function output2(){
     document.getElementById('result2').innerHTML = parseInt(value3) - parseInt(value4);
 }
 </script>
-
+//-------------------Multiplication Calculator and Code---------
 </script>
 
 <P id="introduction"> <font face="verdana" color="blue" size="3pt"><b>
@@ -83,7 +85,7 @@ function output3(){
     document.getElementById('result3').innerHTML = parseInt(value5) * parseInt(value6);
 }
 </script>
-
+//-----------------------Division Calculator & Code -------------
 </script>
 
 <P id="introduction"> <font face="verdana" color="yellow" size="3pt"><b>
@@ -106,16 +108,18 @@ function output4(){
     document.getElementById('result4').innerHTML = parseInt(value7) / parseInt(value8);
 }
 </script>
-
+//----------------------------- Order of Oerations Section -----------------
 <h1> Order of Operations</h1>
 <p> Order of operations are rules that say which calculation comes first in an expression.</p>
 <p> A = addition, S = Subtraction, D = Division, E = Exponent, M = Multiplication, P = parentheses</p>
 <p> Click on each button to test yourself. </p>
 
+//------------ bution functions coresponding to the order of operations ----------------
 <button onclick="oo1()">1st order</button> <button onclick="oo2()">2nd order</button>
 <button onclick="oo3()">3rd order</button> <button onclick="oo4()">4th order</button>
 <button onclick="oo5()">5th order</button> <button onclick="oo6()">6th order</button>
 <script>
+//---- 1st function----
 function oo1(){
     var name = prompt('What is the first order of operation?');
     if (name == 'p')
@@ -133,6 +137,7 @@ function oo1(){
 }
 </script>
 <script>
+//----------- 2nd function-------
 function oo2(){
     var name = prompt('What is the 2nd order of operation?');
     if (name == 'e')
@@ -150,6 +155,7 @@ function oo2(){
 }
 </script>
 <script>
+//-------------3rd function------------
 function oo3(){
     var name = prompt('What is the 3rd order of operation?');
     if (name == 'm')
@@ -167,6 +173,7 @@ function oo3(){
 }
 </script>
 <script>
+// ------------- 4th function -----------
 function oo4(){
     var name = prompt('What is the 4th order of operation?');
     if (name == 'd')
